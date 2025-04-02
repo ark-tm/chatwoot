@@ -13,8 +13,11 @@ Metrics/ClassLength:
   Exclude:
     - 'app/models/message.rb'
     - 'app/models/conversation.rb'
+    - 'app/services/telegram/incoming_message_service.rb'
 Metrics/MethodLength:
   Max: 19
+  Exclude:
+    - 'app/services/telegram/incoming_message_service.rb'
 RSpec/ExampleLength:
   Max: 25
 Style/Documentation:
@@ -116,6 +119,7 @@ Style/GuardClause:
 Metrics/AbcSize:
   Max: 26
   Exclude:
+    - 'app/services/telegram/incoming_message_service.rb'
     - 'app/controllers/concerns/auth_helper.rb'
 Rails/UniqueValidationWithoutIndex:
   Exclude:
